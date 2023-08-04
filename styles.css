@@ -1,10 +1,10 @@
 
-
-   body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2; /* Add a beautiful background color */
+}
   
   header {
     background-color: #333;
@@ -97,9 +97,28 @@
     border-radius: 5px;
     cursor: pointer;
   }
+   button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
   form button:hover, 
   form button:focus {
-    background-color: #1a4b80;
+    background-color:#1f6ab9f8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+   button:hover, 
+   button:focus {
+    background-color: #1f6ab9f8;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -133,3 +152,42 @@
   .logo span{
     color:red;
   }
+
+  /* Add responsiveness */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 5px; /* Adjust the padding for smaller screens */
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    margin: 5px; /* Adjust the margin for smaller screens */
+  }
+
+  .hero h1 {
+    font-size: 2rem; /* Adjust the font size for smaller screens */
+  }
+
+  .services-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-item {
+    max-width: 100%; /* Adjust the max-width for smaller screens */
+    margin-bottom: 20px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
